@@ -815,9 +815,6 @@ footer {
     .education-block h3, .education-block span {
         float: none
     }
-    .project-image {
-        display: none
-    }
     .project-info {
         position: relative;
         margin: 0;
@@ -843,5 +840,16 @@ footer {
     #lead-content a {
         font-size: 0.9em;
         padding: 5px 10px
+    }
+    .project-image {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img-pro {
+        width: 600px;
+        height: 250px;
+        border-radius: 5px;
     }
 }
