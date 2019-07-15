@@ -208,6 +208,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script>
+            (function () {
+                var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+                link.type = 'image/x-icon';
+                link.rel = 'shortcut icon';
+                link.href = 'https://github.com/cegrosa/cegrosa.github.io/blob/master/images/logo.png';
+                document.getElementsByTagName('head')[0].appendChild(link);
+            })();
+    </script>
 </body>
 
 </html>
